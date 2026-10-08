@@ -150,3 +150,45 @@ a { color: var(--blue-deep); }
 .brand-logo { height: 3rem; max-width: 70vw; object-fit: contain; width: auto; display: block; }
 .portrait { width: 200px; height: 200px; }
 @media (max-width: 860px) { .portrait { width: 160px; height: 160px; } }
+
+/* ---------- Round 2: deck content ---------- */
+
+/* Proof facts under the hero buttons */
+.proof { display: flex; flex-wrap: wrap; gap: 1.25rem 2.25rem; margin: 2.25rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+.proof div { min-width: 0; }
+.proof dt { font-family: var(--font-head); font-weight: 800; font-size: 1.45rem; line-height: 1.1; color: var(--ink); }
+.proof dd { margin: .2rem 0 0; font-size: .95rem; color: var(--muted); max-width: 16ch; line-height: 1.35; }
+
+/* Compliance: the loudest section */
+.compliance { background: var(--ink); color: #fff; }
+.compliance h2 { color: #fff; max-width: 22ch; }
+.compliance .section-intro { color: #D5E3EC; }
+.compliance-head { max-width: 760px; }
+.compliance-list { list-style: none; margin: 2.25rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2.5rem; border-top: 2px solid var(--blue); }
+.compliance-list li { padding: 1.1rem 0 1.1rem 1.6rem; border-bottom: 1px solid rgba(213, 227, 236, .22); position: relative; }
+.compliance-list li::before { content: ""; position: absolute; left: 0; top: 1.45rem; width: .7rem; height: .7rem; background: var(--blue); clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); }
+.compliance-list strong { display: block; font-family: var(--font-head); font-weight: 700; font-size: 1.15rem; }
+.compliance-list span { display: block; color: #D5E3EC; font-size: 1.02rem; margin-top: .15rem; }
+.compliance :focus-visible { outline-color: #fff; }
+
+/* Platforms line */
+.platforms { margin-top: 1.75rem; color: var(--muted); }
+.platforms strong { font-family: var(--font-head); color: var(--ink); }
+
+/* Results */
+.results { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; margin-top: 2rem; }
+.results > div { border-top: 4px solid var(--ink); padding-top: 1rem; }
+.results p { color: var(--muted); margin: 0; font-size: 1.05rem; }
+.fee-note { margin: 2.25rem 0 0; padding: 1rem 1.25rem; background: var(--white); border-left: 6px solid var(--blue); font-family: var(--font-head); font-weight: 600; font-size: 1.1rem; max-width: none; }
+
+.fine { font-size: .9rem; color: var(--muted); font-style: italic; }
+
+@media (max-width: 860px) {
+  .compliance-list, .results { grid-template-columns: 1fr; }
+}
+@media (max-width: 1000px) {
+  .nav { gap: 1.1rem; }
+}
+.proof { display: grid; grid-template-columns: auto auto auto; justify-content: start; gap: 1rem 2rem; }
+.proof dd { max-width: 14ch; }
+@media (max-width: 560px) { .proof { grid-template-columns: 1fr 1fr; } }

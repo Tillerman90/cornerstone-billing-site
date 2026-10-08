@@ -14,19 +14,32 @@ On GitHub, open a file, click the pencil icon, edit, and click **Commit changes*
 ## Publish with GitHub Pages
 1. Repo **Settings > Pages**.
 2. Source: **Deploy from a branch**, branch `main`, folder `/ (root)`.
-3. Under **Custom domain**, enter the domain (for example `cornerstonebilling.com`) and save.
-4. Tick **Enforce HTTPS** once it becomes available.
 
-## Connect the custom domain
-At the domain registrar, add these DNS records:
-- Four `A` records for `@` pointing to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-- One `CNAME` record for `www` pointing to `<github-username>.github.io`
+## Connect the custom domain (cornerstoneaiabilling.com, registered at Namecheap)
+GitHub recommends verifying the domain first, then adding it to the repo, then changing DNS.
 
-Verify these against GitHub's current docs before setting up. DNS can take a few hours to update.
+1. **Verify the domain:** GitHub profile picture > **Settings > Pages > Add a domain**. Enter `cornerstoneaiabilling.com`. GitHub shows a TXT record.
+2. In Namecheap: **Domain List > Manage > Advanced DNS**. Add that TXT record, then click **Verify** in GitHub.
+3. **Add it to the repo:** repo **Settings > Pages > Custom domain**, enter `cornerstoneaiabilling.com`, save.
+4. **DNS records in Namecheap (Advanced DNS):** delete any parking-page or redirect records Namecheap added, then add:
+   - `A Record`, host `@`, value `185.199.108.153`
+   - `A Record`, host `@`, value `185.199.109.153`
+   - `A Record`, host `@`, value `185.199.110.153`
+   - `A Record`, host `@`, value `185.199.111.153`
+   - `CNAME Record`, host `www`, value `<github-username>.github.io.` (no repo name)
+5. Wait for the DNS check in GitHub Pages to pass (minutes to 24 hours), then tick **Enforce HTTPS**.
+
+Values from GitHub's docs, "Managing a custom domain for your GitHub Pages site."
 
 ## Handoff checklist
-- [ ] Allie owns the GitHub account (or the repo has her as owner)
-- [ ] Allie owns the domain registration, in her name
-- [ ] Allie has the logins stored in a password manager
-- [ ] Contact form (optional): sign up at formspree.io and swap the email button for a form
-- [ ] Business email on the domain (optional): Google Workspace or Zoho
+- [ ] Allie owns the GitHub account and the repo
+- [ ] Allie owns the domain at Namecheap, in her name
+- [ ] Logins stored in a password manager, two-step login turned on
+- [ ] Andrew added back as a collaborator (optional)
+
+## Waiting on Allie
+- About text (replace the two paragraphs in the About section of `index.html`)
+- Testimonial approvals (5 quotes in the value proposition deck)
+- Payment-cycle chart images (deck slides 9 and 10)
+- Higher-resolution logo
+- Calendly link (optional; replace the `mailto:` link on the contact button)
