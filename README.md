@@ -6,7 +6,7 @@ A simple static site: plain HTML and CSS. No build step, no frameworks, no accou
 - `index.html` : all page content. Text is easy to find and edit.
 - `styles.css` : colors and fonts are at the top (`:root`).
 - `favicon.svg` : browser tab icon.
-- `assets/` : `logo.png` (header logo) and `allie.jpg` (headshot). Swap in higher-resolution versions with the same file names any time.
+- `assets/` : `logo.png` (header logo), `allie.jpg` (headshot), and `sssa-logo.png` (Southern States Sign Association membership logo). Swap in higher-resolution versions with the same file names any time.
 
 ## Edit the site
 On GitHub, open a file, click the pencil icon, edit, and click **Commit changes**. The site updates in about a minute.
@@ -39,7 +39,8 @@ Values from GitHub's docs, "Managing a custom domain for your GitHub Pages site.
 
 ## Waiting on Allie
 - About text (replace the two paragraphs in the About section of `index.html`)
-- Testimonial approvals (5 quotes in the value proposition deck)
+- **Action item (Allie):** get approval from the 5 people quoted in her deck to use their names, titles, and companies with their testimonials
 - Payment-cycle chart images (deck slides 9 and 10)
 - Higher-resolution logo
 - Calendly link (optional; replace the `mailto:` link on the contact button)
+- Which Bible translation to use if she wants verse text shown under each core value (only references are shown now)
