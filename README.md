@@ -31,6 +31,14 @@ GitHub recommends verifying the domain first, then adding it to the repo, then c
 
 Values from GitHub's docs, "Managing a custom domain for your GitHub Pages site."
 
+## Turn on the interest form (Formspree, free plan)
+Until this is done, the form opens a pre-filled email instead of sending directly.
+1. Sign up at formspree.io with cornerstoneaiabilling@gmail.com and confirm the email.
+2. Create a new form. Formspree shows an endpoint like `https://formspree.io/f/abcd1234`.
+3. In `index.html`, find `YOUR-FORM-ID` and replace it with the ID (the `abcd1234` part). Commit and push.
+4. Submit a test from the live site. The first submission may ask you to confirm in email.
+The free plan allows 50 submissions a month; submissions also show in the Formspree dashboard.
+
 ## Handoff checklist
 - [ ] Allie owns the GitHub account and the repo
 - [ ] Allie owns the domain at Namecheap, in her name
@@ -42,5 +50,4 @@ Values from GitHub's docs, "Managing a custom domain for your GitHub Pages site.
 - **Action item (Allie):** get approval from the 5 people quoted in her deck to use their names, titles, and companies with their testimonials
 - Payment-cycle chart images (deck slides 9 and 10)
 - Higher-resolution logo
-- Calendly link (optional; replace the `mailto:` link on the contact button)
 - Which Bible translation to use if she wants verse text shown under each core value (only references are shown now)
