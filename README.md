@@ -47,7 +47,6 @@ The free plan allows 50 submissions a month; submissions also show in the Formsp
 
 ## Waiting on Allie
 - About text (replace the two paragraphs in the About section of `index.html`)
-- **Action item (Allie):** get approval from the 5 people quoted in her deck to use their names, titles, and companies with their testimonials
 - Payment-cycle chart images (deck slides 9 and 10)
 - Higher-resolution logo
 - Which Bible translation to use if she wants verse text shown under each core value (only references are shown now)
